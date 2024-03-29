@@ -354,7 +354,34 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <!-- checklist-->
+              
+            
+  <div class="list-group">
+    <label class="list-group-item d-flex gap-2">
+      <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked>
+      <span>
+        First checkbox
+        <small class="d-block text-body-secondary">With support text underneath to add more detail</small>
+      </span>
+    </label>
+    <label class="list-group-item d-flex gap-2">
+      <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+      <span>
+        Second checkbox
+        <small class="d-block text-body-secondary">Some other text goes here</small>
+      </span>
+    </label>
+    <label class="list-group-item d-flex gap-2">
+      <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+      <span>
+        Third checkbox
+        <small class="d-block text-body-secondary">And we end with another snippet of text</small>
+      </span>
+    </label>
+  </div>
+
+
             </div>
           </div>
         </div>
@@ -391,7 +418,13 @@
     <!-- derecha-->
     <div class="col">
       <!-- carrusel  -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="..." class="d-block w-100" alt="...">
@@ -403,16 +436,15 @@
             <img src="..." class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div> 
   </div>
 
 
